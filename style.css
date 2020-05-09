@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: hsl(230, 17%, 14%);
+}
+
+main {
+    margin: 40px 200px 40px 200px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading-count h3 {
+    font-size: 22px;
+    color: hsl(230, 17%, 14%);
+}
+
+.heading-count h5 {
+    color: hsl(228, 12%, 44%);
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.theme-switcher {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switcher p {
+    display: inline;
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 28px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(228, 12%, 44%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: hsl(146, 68%, 55%);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px hsl(228, 12%, 44%);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+.total-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 38px;
+}
+
+.total-container .total-box {
+    padding: 24px 58px 24px 58px;
+    background-color: hsl(227, 47%, 96%);
+    height: 215px;
+    max-width: 253px;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.facebook {
+    border-top: 4px solid hsl(195, 100%, 50%);
+}
+
+.twitter {
+    border-top: 4px solid hsl(203, 89%, 53%);
+}
+
+.instagram {
+    border-top: 4px solid hsl(37, 97%, 70%);
+}
+
+.youtube {
+    border-top: 4px solid hsl(348, 97%, 39%);
+}
+
+.total-box .upper-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.total-box .upper-row p {
+    font-size: 10px;
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+}
+
+.total-box .count {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.total-box .followers {
+    letter-spacing: 2.5px;
+    color: hsl(228, 12%, 44%);
+}
+
+.change-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.change-total p {
+    color: hsl(163, 72%, 41%);
+    font-weight: 700;
+    padding-right: 4px;
+}
+
+.change-total img {
+    width: 10%;
+    height: 5px;
+    padding-right: 4px;
+}
+
+#overview {
+    font-size: 22px;
+    color: hsl(228, 12%, 44%);
+}
+
+.change-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.change-box {
+    padding: 22px 30px 22px 30px;
+    background-color: hsl(227, 47%, 96%);
+    width: 230px;
+    border-radius: 6px;
+    margin-top: 20px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-row h6 {
+    font-size: 12px;
+    color: hsl(228, 12%, 44%);
+}
+
+.lower-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    align-items: center;
+}
+
+.lower-row h2 {
+    font-size: 28px;
+}
+
+.percentage-change {
+    display: flex;
+    align-items: center;
+}
+
+.percentage-change .up {
+    color: hsl(163, 72%, 41%);
+}
+
+.percentage-change .down {
+    color: hsl(356, 69%, 56%);
+}
+
+.percentage-change img {
+    height: 5px;
+    padding-right: 4px;
+}
+
+
+@media only screen and (max-width: 780px) {
+    main {
+        margin: 20px 20px 20px 20px;
+    }
+
+
+}
